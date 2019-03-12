@@ -106,8 +106,7 @@ function sendToParticle(myIn){
 
 <h2 align=center>Web <a href="http://particle.io">Particle.io</a> App</h2>
 
-Device ID:<input id="myDeviceId" name="myCoreID" type=password size=50 placeholder="78dd12345678123456"> <br>
-Get this from the core area when logged in<br>
+Device ID:<input id="myDeviceId" name="myCoreID" type=password size=50 placeholder="78dd12345678123456"> <br><br>
 
 <input id="myFunctionName" name="myFunction"  type=hidden size=50 value="my-main" > 
 
@@ -115,8 +114,7 @@ Get this from the core area when logged in<br>
 
 <input id="myParameter" name="params" type=text  style="display:none"     size=50 placeholder="d7-send-high"> 
 
-Access Token:<input id="myToken" name="access_token" type=password size=50 placeholder="5622ce6bba702ef6bd3456d5ed26aaa4a28d7c9"> <br>
-Get this from the settings area when logged into <a href="http://particle.io/build">http://particle.io/build</a><br>
+Access Token:<input id="myToken" name="access_token" type=password size=50 placeholder="5622ce6bba702ef6bd3456d5ed26aaa4a28d7c9"> <br><br>
 
 </form>
 
@@ -127,20 +125,6 @@ Get this from the settings area when logged into <a href="http://particle.io/bui
 }">
 
 <br><br>
-
- <input type="button" value="WHOAMI" onClick="{
-    sendToParticle('WHOAMI(xx,1)')
-}"> 31=Raspberry PI, 6=Photon<br>  
-   
- <input type="button" value="Activate Loop" onClick="{
-    if (this.value == 'Activate Loop'){                                                 
-        sendToParticle('loop(xx,1);') 
-        this.value = 'Stop Looping'
-    } else {
-        sendToParticle('loop(xx,0);')  
-        this.value = 'Activate Loop'
-    }
-}"> Direct microprocessor looped control <br><br>
 
 <div width="400" height="200" name="myDivName" id="myDivId"> output here </div><hr>
 
