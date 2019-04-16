@@ -123,15 +123,14 @@ Access Token:<input id="myToken" name="access_token" type=password size=50 place
    localStorage.setItem('myStoredText2', document.all.myDeviceId.value)
    alert('Device ID =' + document.all.myDeviceId.value +'\n\nAccess Token='+ document.all.myToken.value +' \n\nHas been stored')
 }">
-
+   
 <br><br>
-
+   
 <div width="400" height="200" name="myDivName" id="myDivId"> output here </div><hr>
-
-<!-- ********************* END OF:       DO NOT MESS WITH THIS ADVANCED STUFF -->  
-
-<!-- ********************* You change the following buttons as needed -->  
-
+   
+<!-- ********************* END OF:       DO NOT MESS WITH THIS ADVANCED STUFF -->
+<!-- ********************* You change the following buttons as needed -->
+   
 <input type="button" value="digitalWrite(D7,1);" onClick="{
     sendToParticle('digitalWrite(D7,1);')
 }">
